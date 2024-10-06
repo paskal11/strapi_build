@@ -5,7 +5,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000'], // Укажите адрес вашего React-приложения
+      origin: ['http://localhost:3000'],
     },
   },
   'strapi::poweredBy',
