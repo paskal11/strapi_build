@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "button_1": {
+      "type": "string"
+    },
+    "button_2": {
+      "type": "string"
+    },
+    "button_3": {
+      "type": "string"
+    },
+    "button_4": {
+      "type": "string"
+    }
+  }
+}
