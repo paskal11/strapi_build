@@ -7,7 +7,8 @@ exports.default = [
     {
         name: 'strapi::cors',
         config: {
-            origin: ['http://localhost:3000'],
+            enabled: true,
+            origin: ['*'],
         },
     },
     'strapi::poweredBy',
