@@ -8,7 +8,7 @@ exports.default = [
         name: 'strapi::cors',
         config: {
             enabled: true,
-            origin: ['https://creative-kulfi-707b6e.netlify.app'],
+            origin: ['https://strapi-build-65om.onrender.com'],
         },
     },
     'strapi::poweredBy',

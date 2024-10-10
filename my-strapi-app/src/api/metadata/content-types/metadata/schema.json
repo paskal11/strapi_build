@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "features",
+  "collectionName": "meta_data",
   "info": {
-    "singularName": "feature",
-    "pluralName": "features",
-    "displayName": "features",
+    "singularName": "metadata",
+    "pluralName": "meta-data",
+    "displayName": "metadata",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "tittle": {
+    "title": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -25,22 +25,23 @@
       }
     },
     "description": {
-      "type": "text",
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "img": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
+    "keywords": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "author": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
