@@ -6,7 +6,7 @@ export default [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['https://strapi-build-65om.onrender.com'],
+      origin: ['https://incandescent-naiad-38e483.netlify.app'],
     },
   },
   'strapi::poweredBy',
