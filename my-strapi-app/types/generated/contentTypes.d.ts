@@ -630,6 +630,12 @@ export interface ApiMetadataMetadata extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    lang: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

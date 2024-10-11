@@ -7,8 +7,8 @@ exports.default = [
     {
         name: 'strapi::cors',
         config: {
-            enabled: true,
-            origin: ['https://incandescent-naiad-38e483.netlify.app'],
+            enabled: false,
+            origin: ['*'],
         },
     },
     'strapi::poweredBy',
