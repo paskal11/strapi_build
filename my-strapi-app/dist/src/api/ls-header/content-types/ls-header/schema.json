@@ -1,0 +1,27 @@
+{
+    "kind": "collectionType",
+    "collectionName": "ls_headers",
+    "info": {
+        "singularName": "ls-header",
+        "pluralName": "ls-headers",
+        "displayName": "lsHEADER"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "logo": {
+            "type": "string"
+        },
+        "nav_1": {
+            "type": "string"
+        },
+        "nav_2": {
+            "type": "string"
+        },
+        "nav_3": {
+            "type": "string"
+        }
+    }
+}

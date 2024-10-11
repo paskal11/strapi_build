@@ -589,6 +589,94 @@ export interface ApiHeroHero extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiLsFeatureLsFeature extends Struct.CollectionTypeSchema {
+  collectionName: 'ls_features';
+  info: {
+    singularName: 'ls-feature';
+    pluralName: 'ls-features';
+    displayName: 'lsFEATURE';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    img: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ls-feature.ls-feature'
+    >;
+  };
+}
+
+export interface ApiLsHeaderLsHeader extends Struct.CollectionTypeSchema {
+  collectionName: 'ls_headers';
+  info: {
+    singularName: 'ls-header';
+    pluralName: 'ls-headers';
+    displayName: 'lsHEADER';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    logo: Schema.Attribute.String;
+    nav_1: Schema.Attribute.String;
+    nav_2: Schema.Attribute.String;
+    nav_3: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ls-header.ls-header'
+    >;
+  };
+}
+
+export interface ApiLsHeroLsHero extends Struct.CollectionTypeSchema {
+  collectionName: 'ls_heroes';
+  info: {
+    singularName: 'ls-hero';
+    pluralName: 'ls-heroes';
+    displayName: 'lsHERO';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    button: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ls-hero.ls-hero'
+    >;
+  };
+}
+
 export interface ApiMetadataMetadata extends Struct.CollectionTypeSchema {
   collectionName: 'meta_data';
   info: {
@@ -1029,6 +1117,9 @@ declare module '@strapi/strapi' {
       'api::feature.feature': ApiFeatureFeature;
       'api::header.header': ApiHeaderHeader;
       'api::hero.hero': ApiHeroHero;
+      'api::ls-feature.ls-feature': ApiLsFeatureLsFeature;
+      'api::ls-header.ls-header': ApiLsHeaderLsHeader;
+      'api::ls-hero.ls-hero': ApiLsHeroLsHero;
       'api::metadata.metadata': ApiMetadataMetadata;
       'admin::permission': AdminPermission;
       'admin::user': AdminUser;
